@@ -1,4 +1,4 @@
-"""
+
 # POPUP TOOL
 
 PopUp Tool is an extension that allows users to select text and summarize, explain, or translate it.
@@ -107,7 +107,7 @@ The tool provides four options:
    - It can take 2-5 minutes to get a summary or explanation.
 
 4. Using Google's built-in AI (Prompt API) in PopUp-Tool:
-   - You can summarize and more with just a right-click!
+   - You can summarize and more with Prompt API's content generator
    - Get results while sitting in the worst humanly possible posture!
 
 5. PopUp-Tool helps non-native speakers learn languages or understand articles/blog posts easily, with no extra steps—just a RIGHT CLICK!
@@ -118,4 +118,4 @@ The tool provides four options:
 - Some text or selections may not work if they are too complex for Prompt API to handle and might return an error. Proper error handling has been ensured to manage such scenarios.
 - As Prompt API and other AI technologies are still in early stages, generated responses might not always be accurate.
 - This project/extension is a demonstration of how built-in AIs like Prompt API can be utilized to make browsing easier.
-"""
+
