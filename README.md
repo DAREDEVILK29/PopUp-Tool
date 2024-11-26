@@ -1,100 +1,121 @@
 
-# PopUp-Tool
+# POPUP TOOL
 
-PopUp Tool is an extension that allows users to select texts and summarize, explain and translate
+PopUp Tool is an extension that allows users to select text and summarize, explain, or translate it.
 
 ## Installation Guide
--> extracts the zip folder
--> open chrome dev tools/ chromium
--> install Prompt API > await ai.languageModel.capabilities(); if not installed
--> enable necessary Flags in chrome dev tools
->Installing the extension
-->Open Chrome Dev tools, click on "Manage Extensions" and turn on "Developer Mode"
--> click on "Load unpacked" locate the PopUp-Tool Folder that was Extracted
--> Select the "PopUp-Tool" Folder and Check if the Extension has been installed in "Manage Extensions"
 
-### Read Instructions Below Before using or testing the extension !!
+1. Extract the zip folder.
+2. Open Chrome Dev Tools / Chromium.
+3. Install Prompt API: `await ai.languageModel.capabilities();` if not already installed.
+4. Enable necessary Flags in Chrome Dev Tools.
 
+### Installing the Extension
+1. Open Chrome Dev Tools, click on "Manage Extensions," and turn on "Developer Mode."
+2. Click on "Load unpacked," locate the extracted `PopUp-Tool` folder.
+3. Select the `PopUp-Tool` folder and check if the extension has been installed in "Manage Extensions."
 
-## Api used
-->Prompt API
+### Read the instructions below before using or testing the extension!
+
+---
+
+## API Used
+- Prompt API
+
+---
 
 ## Features
-The Tool Provides with 4 options
-1.Summarize
-2.Define
-3.Explain
-4.Translate
+
+The tool provides four options:
+1. Summarize
+2. Define
+3. Explain
+4. Translate
+
+---
 
 ## Functionality and How to Use the Extension
 
-->Users need to select a text or a paragraph they want to summarize,explain etc 
-and Right-Click->PopUp-Tool->Choose one of the 4 Options
+1. Select the text or paragraph you want to summarize, explain, etc.
+2. Right-click -> PopUp-Tool -> Choose one of the four options.
+3. Each option sends the selected text to the Prompt API, which returns a response displayed in a modal popup on the webpage after a few seconds.
 
-->Each option selects the text and pass it to Prompt API which then after Few Seconds
-sends a response back to a Modal Popup in the webpage.
+---
 
-## PopUp-Tool Options and Instructions!
+## PopUp-Tool Options and Instructions
 
-1. Summarize/Summarize this text
--> sends the selected text to Prompt Api and returns an easy to understand summary of the selected text
--> takes upto 10 seconds for Prompt API to generate the response and return it.
+### 1. Summarize / Summarize this text
+- Sends the selected text to the Prompt API and returns an easy-to-understand summary of the selected text.
+- Takes up to 10 seconds for the Prompt API to generate the response.
 
-   ^Best sites to try on are News Articles,Blog Posts,WikiPedia
+**Best sites to try:** News articles, blog posts, Wikipedia.
 
-2.Define/Define this word
--> lets the user select a word or two and provides a definition for the selected words.
--> max selection is 2 words. any more than 2 words will return an error and asks you to select a word!
->IMPORTANT NOTEs TO REMEMBER WHEN USING Define Option
-->it can ONLY provide definition to English words, non-english words will return an error!
+---
 
- ^Best sites to try on are News Articles,Blog Posts,WikiPedia
+### 2. Define / Define this word
+- Lets the user select a word or two and provides a definition for the selected words.
+- The maximum selection is two words. Selecting more than two words will return an error, prompting you to select a single word.
 
-3.Explain/Explain and Breakdown
--> lets users select a paragraph or more and provide an explanation and breakdown of the selected text.
-   with Key points and subpoints
--> this option can also be used on Code snippets to provide an explanation and breakdown.
->IMPORTANT NOTEs TO REMEMBER WHEN USING Explain Option
--> cant be used to summarize, translate! Only works on English Texts. non-english selections return an error
--> can take longer than 10 seconds, max is 20 seconds
--> First attempt may not work, just close modal and try again to get it to work
+**Important Notes:**
+- It can only provide definitions for English words. Non-English words will return an error.
 
-  ^Best sites to try on are News Articles,Blog Posts,WikiPedia and LeetCode etc!
- 
-4.Translate/ Translate this word
--> lets users translate Selected Texts and provides a simple summarized Translation of the text
--> Currently working Languages "JAPANESE" AND "SPANISH".
--> some texts might not be translated if they are too complex for Prompt Api to translate.
->IMPORTANT NOTEs TO REMEMBER WHEN USING Translate Option
--> can take upto 15 to 20 seconds for Prompt Api to send a response
--> if first attempt fails just try again!
--> Selecting More than one Non English Paragraph returns an error,
-   Please select One paragraph to make translating easy for PromptAPI
+**Best sites to try:** News articles, blog posts, Wikipedia.
 
-  ^Best sites to try on: for japanese https://www3.nhk.or.jp/news/easy/ or any japanese website
-   for spanish : https://www.fluentu.com/blog/spanish/spanish-poems/ or any spanish websites
+---
 
+### 3. Explain / Explain and Breakdown
+- Lets users select a paragraph or more and provides an explanation and breakdown of the selected text, including key points and subpoints.
+- Can also be used on code snippets to provide explanations and breakdowns.
 
+**Important Notes:**
+- Cannot be used to summarize or translate. Works only on English texts. Non-English selections will return an error.
+- Can take longer than 10 seconds, with a maximum of 20 seconds.
+- The first attempt may not work. If this happens, close the modal and try again.
 
-## Problem this Extension trying solve
-> its always been an hassle to get Definition, Summary and Explanations.
-  if someone needs a Definition you need to open a new tab type in or paste a word you want a definition for,
-  or trying to get an explanation or summary for a text or code which can be time consuming and exhaustingly 
-  repetitive.
-> with PopUp-Tool, Browsing makes it more easier and less tiring. you dont have to open a new tab or
-  type in or paste your code or texts in a chatbot or applications. Popup-tools makes summarizing, defining
-  and explaining and even translating easier with just a right click and in few seconds you get what you want.
-> lots of summarizing extentions which rely on ai force you to a new tab and Create an account in order to Use
-  the extension. and it takes atleast 2 to 5 mins to get a summary or explanation for your text
-> but by using Google's built in ai like PromptAPI in PopUp-Tool you can summarize and more with just a right click!
-  you can get your summary, definition, explanation while sitting in the worst humanly impossible posture!
-> PopUp-Tool helps in learning languages or undestanding Articles/Blogposts more easier to non-native speakers
-  with no extra work or steps! again just with a RIGHT CLICK!
+**Best sites to try:** News articles, blog posts, Wikipedia, and LeetCode, etc.
 
+---
 
+### 4. Translate / Translate this text
+- Lets users translate selected texts and provides a simple summarized translation.
+- Currently supports translations for "Japanese" and "Spanish."
+- Some texts may not be translated if they are too complex for the Prompt API to handle.
 
-NOTE: SOME TEXT OR SELECTION MAY NOT WORK AS IT CAN BE TOO MUCH OR COMPLEX FOR PROMPT API TO HANDLE
-      AND MIGHT RETURN AN ERROR, ENSURED PROPER ERROR HANDLING TO HANDLE SUCH SCENARIOS.
-	    AS PROMPT API AND OTHERS ARE STILL IN EARLY-STAGE ALL GENERATED RESPONSE MIGHT NOT BE ACCURATE AT ALL TIMES.
-	    THIS PROJECT/EXTENSION IS A DEMONSTRATION ON HOW "BUILT IN AIs" LIKE PromptAPI CAN BE UTILIZED TO 
-	    MAKE BROWSING MORE EASIER.
+**Important Notes:**
+- Can take up to 15 to 20 seconds for the Prompt API to send a response.
+- If the first attempt fails, try again.
+- Selecting more than one non-English paragraph returns an error. Please select one paragraph to ensure accurate translation.
+
+**Best sites to try:**
+- For Japanese: [NHK News Easy](https://www3.nhk.or.jp/news/easy/) or any Japanese website.
+- For Spanish: [FluentU Blog](https://www.fluentu.com/blog/spanish/spanish-poems/) or any Spanish website.
+
+---
+
+## Problems This Extension Solves
+
+1. It has always been a hassle to get definitions, summaries, and explanations. For instance:
+   - To get a definition, you often have to open a new tab, type or paste the word, and search for it.
+   - Summarizing or explaining a text or code can be time-consuming and repetitive.
+
+2. With PopUp-Tool, browsing becomes easier and less tiring:
+   - You don't have to open a new tab or paste your content into a chatbot or application.
+   - PopUp-Tool allows summarizing, defining, explaining, and translating with just a right-click, saving time and effort.
+
+3. Many summarizing extensions rely on AI but:
+   - They force you to open a new tab and create an account to use them.
+   - It can take 2-5 minutes to get a summary or explanation.
+
+4. Using Google's built-in AI (Prompt API) in PopUp-Tool:
+   - You can summarize and more with Prompt API's content generator
+   - Get results while sitting in the worst humanly possible posture!
+
+5. PopUp-Tool helps non-native speakers learn languages or understand articles/blog posts easily, with no extra steps—just a RIGHT CLICK!
+
+---
+
+### Notes:
+- Some text or selections may not work if they are too complex for Prompt API to handle and might return an error. Proper error handling has been ensured to manage such scenarios.
+- As Prompt API and other AI technologies are still in early stages, generated responses might not always be accurate.
+- This project/extension is a demonstration of how built-in AIs like Prompt API can be utilized to make browsing easier.
+
