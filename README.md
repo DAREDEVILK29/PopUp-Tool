@@ -11,9 +11,10 @@ PopUp Tool is an extension that allows users to select text and summarize, expla
 4. Enable necessary Flags in Chrome Dev Tools.
 
 ### Installing the Extension
-1. Open Chrome Dev Tools, click on "Manage Extensions," and turn on "Developer Mode."
-2. Click on "Load unpacked," locate the extracted `PopUp-Tool` folder.
+1. Open Chrome Dev Tools, click on "Manage Extensions" and turn on "Developer Mode."
+2. Click on "Load unpacked," locate  `PopUp-Tool` folder in `PopUp-Tool-main/PopUp-Tool-main/PopUp Tool`.
 3. Select the `PopUp-Tool` folder and check if the extension has been installed in "Manage Extensions."
+4. LOAD ONLY THE `PopUp Tool` FOLDER IN "Manage Extensions". LOADING `PopUp-Tool-main` WILL NOT DETECT `manifest.json`
 
 ### Read the instructions below before using or testing the extension!
 
