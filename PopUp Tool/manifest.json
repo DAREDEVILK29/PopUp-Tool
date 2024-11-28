@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "PopUp-Tool",
+    "version": "1.0",
+    "description": "A Chrome extension that uses Gemini Nano tp provide with various tool to help with browsing and generating content",
+    "permissions": ["scripting", "activeTab","storage","contextMenus"],
+    "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"},
+    "action": {
+      "default_popup": "Popups/popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+      
+    },
+    "icons": {
+      "128": "icons/icon128.png"
+    },
+    "content_scripts":[{
+      "matches":["https://*/*", "http://*/*"],
+      "js": ["content.js"]
+    }]
+   
+}  
