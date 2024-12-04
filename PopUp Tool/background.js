@@ -204,7 +204,7 @@ async function showModal(info,title,loadingTag,systemPrompt) {
     // Handle different prompt actions
     switch (promptTag) {
       case 'Summarize':
-        stream = await promptSession.promptStreaming(`${promptTag} ${selectedText} in an understandable sentences that covers the main point of the text in enough sentences but not too long. "Break down into smaller paragraphs for easier understanding"`);
+        stream = await promptSession.promptStreaming(`${promptTag} ${selectedText} in an understandable sentences that covers the main point of the text."Break down into smaller paragraphs for easier understanding"`);
         break;
       case 'Define':
         stream = await promptSession.promptStreaming(`${promptTag} ${selectedText} in one sentence and one example. well formatted and spaced. non-bolded, non-italic response.`);
